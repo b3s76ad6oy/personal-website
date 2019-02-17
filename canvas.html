@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 0;
+            width: 100%;
+        }
+
+        div.gallery img {
+            padding: 5px;
+            float: left;
+            width: 300px;
+            height: 200px;
+        }
+
+        .canvas {
+            display: block;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="canvas">
+        <canvas id="myCanvas" width="720" height="480px" style="border:1px solid #d3d3d3;"></canvas></div>
+
+    <div class="gallery">
+        <img id="img1" src="assets/img/img.jpeg" alt="Trolltunga Norway" width="300px" height="200px" onclick="myFunc1()">
+
+        <img id="img2" src="assets/img/img2.jpeg" alt="Forest" width="300px" height="200px" onclick="myFunc2()">
+
+        <img id="img3" src="assets/img/img3.jpeg" alt="Northern Lights" width="300px" height="200px" onclick="myFunc3()">
+
+        <img id="img4" src="assets/img/img4.jpeg" alt="Mountains" width="300px" height="200px" onclick="myFunc4()">
+    </div>
+
+    <script>
+        window.onload = function() {
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            var img = document.querySelector("#img1");
+            ctx.drawImage(img, 10, 10);
+        };
+
+        function myFunc1() {
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            var img = document.querySelector("#img1");
+            ctx.drawImage(img, 10, 10);
+        };
+
+        function myFunc2() {
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            var img = document.querySelector("#img2");
+            ctx.drawImage(img, 10, 10);
+        };
+
+        function myFunc3() {
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            var img = document.querySelector("#img3");
+            ctx.drawImage(img, 10, 10);
+        };
+
+        function myFunc4() {
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            var img = document.querySelector("#img4");
+            ctx.drawImage(img, 10, 10);
+        };
+    </script>
+
+</body>
+</html>

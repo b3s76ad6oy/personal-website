@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--title -->
+    <title>Ajanta</title>
+
+    <!-- main.css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!--Header -->
+    <header class="header-content clearfix">
+        <div class="container">
+
+            <!--navigation bar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- logo of this site -->
+            <div class="logo">
+                <a href="index.html">
+                <img id="logo" src="assets/img/logo.png" alt="logo">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!--main content -->
+    <div class="form">
+        <form id="login">
+            <input type="text" placeholder="Username"><br><br>
+            <input type="password" placeholder="Password"><br><br>
+            <input type="button" onclick="register()" value="register">
+            <input type="submit" value="Login">
+        </form>
+        <form id="register">
+            <input type="text" placeholder="First Name"><br><br>
+            <input type="text" placeholder="Last Name"><br><br>
+            <input type="email" placeholder="Email Address"><br><br>
+            <input type="button" value="Login" onclick="login()">
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <script>
+        function register() {
+            document.querySelector('#register').style.display = "block";
+            document.querySelector('#login').style.display = "none";
+        }
+
+        function login() {
+            document.querySelector('#login').style.display = "block";
+            document.querySelector('#register').style.display = "none";
+        }
+
+    </script>
+
+
+    <!-- Footer -->
+    <footer class="footer-content">
+        &copy;2018-19 copyright reserverd to Ajanta
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
